@@ -1,0 +1,389 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun  7 19:22:20 2018
+# Process ID: 2896
+# Current directory: C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.runs/synth_1/Top.vds
+# Journal file: C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3160 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 344.730 ; gain = 100.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:2]
+INFO: [Synth 8-638] synthesizing module 'Sonic_trig' [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Sonic_trig.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Sonic_trig' (1#1) [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Sonic_trig.v:2]
+INFO: [Synth 8-638] synthesizing module 'Sonic_echo' [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:2]
+	Parameter state0 bound to: 2'b00 
+	Parameter state1 bound to: 2'b01 
+	Parameter state2 bound to: 2'b10 
+	Parameter N bound to: 50 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Sonic_echo' (2#1) [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:2]
+INFO: [Synth 8-638] synthesizing module 'led_seg' [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:22]
+INFO: [Synth 8-256] done synthesizing module 'led_seg' (3#1) [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:22]
+INFO: [Synth 8-638] synthesizing module 'PWM' [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/imports/Files/PWM.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/imports/Files/PWM.v:22]
+INFO: [Synth 8-256] done synthesizing module 'PWM' (4#1) [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/imports/Files/PWM.v:2]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Control.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Control.v:46]
+INFO: [Synth 8-256] done synthesizing module 'Control' (5#1) [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Control.v:23]
+WARNING: [Synth 8-3848] Net text2 in module/entity Top does not have driver. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:19]
+INFO: [Synth 8-256] done synthesizing module 'Top' (6#1) [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 396.605 ; gain = 152.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[15] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[14] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[13] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[12] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[11] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[10] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[9] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[8] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[7] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[6] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[5] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[4] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[3] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[2] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[1] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+WARNING: [Synth 8-3295] tying undriven pin prog3:text2[0] to constant 0 [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Top.v:24]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 396.605 ; gain = 152.703
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc]
+WARNING: [Vivado 12-584] No ports matched 'motor[1]'. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'motor[0]'. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'motor[1]'. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'motor[0]'. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test'. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'test'. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 721.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 721.082 ; gain = 477.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 721.082 ; gain = 477.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 721.082 ; gain = 477.180
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:26]
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'seg1_reg' [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:102]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 721.082 ; gain = 477.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               17 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Sonic_trig 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 1     
+Module Sonic_echo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+Module led_seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 2     
+Module PWM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element prog2/count_reg was removed.  [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:26]
+WARNING: [Synth 8-6014] Unused sequential element prog3/clkdiv_reg was removed.  [C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:40]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prog3/seg1_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[7]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[6]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[5]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[4]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[3]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[2]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/seg1_reg[0]) is unused and will be removed from module Top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 721.082 ; gain = 477.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 721.148 ; gain = 477.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 721.297 ; gain = 477.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    31|
+|3     |LUT1   |     7|
+|4     |LUT2   |    10|
+|5     |LUT3   |    23|
+|6     |LUT4   |    26|
+|7     |LUT5   |    30|
+|8     |LUT6   |    25|
+|9     |FDRE   |   159|
+|10    |IBUF   |     6|
+|11    |OBUF   |    33|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   352|
+|2     |  prog1  |Sonic_trig |    41|
+|3     |  prog2  |Sonic_echo |   100|
+|4     |  prog3  |led_seg    |    32|
+|5     |  prog4  |PWM        |    34|
+|6     |  prog5  |PWM_0      |    34|
+|7     |  prog6  |PWM_1      |    34|
+|8     |  prog7  |PWM_2      |    34|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 742.836 ; gain = 174.457
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 742.836 ; gain = 498.934
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 36 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 742.836 ; gain = 511.934
+INFO: [Common 17-1381] The checkpoint 'C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 742.836 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  7 19:23:05 2018...

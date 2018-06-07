@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/Project/XilinkProject/Sonic.xpr/Sonic/Sonic.sim/sim_1/synth/func/xsim/Top_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sonic_trig
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-311] analyzing module led_seg
+INFO: [VRFC 10-311] analyzing module glbl
