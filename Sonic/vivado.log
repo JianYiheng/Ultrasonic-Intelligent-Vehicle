@@ -2,35 +2,20 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Jun  1 15:35:06 2018
-# Process ID: 26304
-# Current directory: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19824
-# Log file: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/vivado.log
-# Journal file: C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Start of session at: Thu Jun  7 20:50:07 2018
+# Process ID: 6924
+# Current directory: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11464 C:\Users\YihengJ\Documents\GitHub\FPGA-Project\Sonic\Sonic.xpr
+# Log file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/vivado.log
+# Journal file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project F:/software/Sonic/Sonic.xpr
+open_project C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/software/Vivado/2017.4/data/ip'.
-open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 712.699 ; gain = 74.395
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 758.918 ; gain = 92.945
 update_compile_order -fileset sources_1
-archive_project F:/software/Sonic.xpr.zip -temp_dir C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-26304-LAPTOP-VBMJPC43 -force -include_local_ip_cache
-INFO: [Coretcl 2-137] starting archive...
-INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-26304-LAPTOP-VBMJPC43' for archiving project
-Scanning sources...
-Finished scanning sources
-INFO: [Coretcl 2-1211] Creating project copy for archival...
-INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
-Current project path is 'C:/Users/lenovo/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-26304-LAPTOP-VBMJPC43/PrjAr/_X_'.
-INFO: [Coretcl 2-1213] Including run results for 'synth_1'
-INFO: [Coretcl 2-1213] Including run results for 'impl_1'
-INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
-INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
-INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

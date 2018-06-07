@@ -1,0 +1,123 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 6924
+License: Customer
+
+Current time: 	Thu Jun 07 20:50:31 CST 2018
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1368x912
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 77 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	YihengJ
+User home directory: C:/Users/YihengJ
+User working directory: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/YihengJ/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/YihengJ/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/YihengJ/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/vivado.log
+Vivado journal file location: 	C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/vivado.jou
+Engine tmp dir: 	C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/.Xil/Vivado-6924-DESKTOP-R99TAMK
+
+GUI allocated memory:	180 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 570 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 60 MB (+60023kb) [00:00:07]
+// [Engine Memory]: 447 MB (+317180kb) [00:00:07]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\YihengJ\Documents\GitHub\FPGA-Project\Sonic\Sonic.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 531 MB (+65125kb) [00:00:11]
+// [GUI Memory]: 65 MB (+2082kb) [00:00:12]
+// [Engine Memory]: 570 MB (+13079kb) [00:00:13]
+// [GUI Memory]: 73 MB (+5118kb) [00:00:14]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 570 MB. GUI used memory: 39 MB. Current time: 6/7/18 8:50:31 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 758.918 ; gain = 92.945 
+// Project name: Sonic; location: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic; part: xc7a35ticsg324-1L
+dismissDialog("Open Project"); // bs (cj)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z (cj, Popup.HeavyWeightWindow)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open Project..."); // ac (cj, Popup.HeavyWeightWindow)
+// TclEventType: DG_GRAPH_GENERATED
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 18 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/YihengJ/Documents/GitHub/FPGA-Project", 0); // ak (ag, JDialog)
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/YihengJ/Documents/GitHub/FPGA-Project", 0); // ak (ag, JDialog)
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Xilinx/Vivado/2017.4/data/xicom/cfgmem", 2); // ak (ag, JDialog)
+selectComboBox(RDIResource.HJFileChooserRecentListPreview_RECENT_DIRECTORIES, "C:/Users/YihengJ/Documents/GitHub/FPGA-Project", 0); // ak (ag, JDialog)
+setFileChooser("C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.xpr");
+// HOptionPane Error: 'Project 'C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.xpr' is already open. (Open Project)'
+// 'i' command handler elapsed time: 41 seconds
+selectButton("PAResourceOtoP.PlanAhead_OPEN_PROJECT_OK", "OK"); // JButton (A, G)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 594 MB. GUI used memory: 41 MB. Current time: 6/7/18 8:51:19 PM CST
+// PAPropertyPanels.initPanels (Sonic_echo.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Sonic_echo.v]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Sonic_echo.v]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [Engine Memory]: 601 MB (+2384kb) [00:01:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 615 MB. GUI used memory: 43 MB. Current time: 6/7/18 8:51:34 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 21 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h (cZ, cj)
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top (Top.v)]", 1); // B (D, cj)
+selectCodeEditor("Sonic_echo.v", 176, 88); // cd (w, cj)
+// WARNING: HTimer (StateMonitor Timer) is taking too long to process. Increasing delay to 4000 ms.

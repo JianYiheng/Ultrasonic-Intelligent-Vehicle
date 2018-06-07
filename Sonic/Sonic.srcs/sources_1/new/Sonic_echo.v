@@ -5,13 +5,9 @@ module Sonic_echo(
     output [15:0] text
 );
 
-reg [3:0] sec_0 = 4'b0;
-reg [3:0] sec_1 = 4'b0;
-reg [3:0] sec_2 = 4'b0;
-reg [3:0] sec_3 = 4'b0;
-
 reg [15:0] count = 16'b0;
 reg [15:0] distance = 16'b0;
+reg [15:0] distance_count = 16'b0;
 reg clk_out = 1'b0;
 
 reg [1:0] state = 2'b0;
@@ -32,18 +28,6 @@ begin
   end
 end
 
-// always @ (posedge clk)
-// begin
-//   echo_next <= echo;
-//   echo_curr <= echo_next;
-// end
-
-// always @ (posedge clk)
-// begin
-//   start <= echo_next & ~echo_curr; //If posedge, start == 1
-//   finish <= ~echo_next & echo_curr; //If negedge, finish == 1
-// end
-
 always @(negedge clk_out)
 case (state)
   state0:
@@ -57,37 +41,15 @@ case (state)
   state1:
   begin
     if (echo) begin
-      if(sec_0 < 9)
-        sec_0 <= sec_0 + 1'b1;
-      else begin
-        sec_0 <= 4'b0;
-        if (sec_1 < 9) begin
-          sec_1 <= sec_1 + 1'b1;
-        end else begin
-          sec_1 <= 4'b0;
-          if (sec_2 < 9) begin
-            sec_2 <= sec_2 + 1'b1;
-          end else begin
-            sec_2 <= 4'b0;
-            if(sec_3 < 9) begin
-                sec_3 <= sec_3 + 1;
-            end else begin
-                sec_3 <= 4'b0;
-            end
-          end
-        end
-      end
+      distance_count <= distance_count + 1;
     end else begin
       state <= state2;
     end
   end
   state2:
   begin
-    sec_0 <= 0;
-    sec_1 <= 0;
-    sec_2 <= 0;
-    sec_3 <= 0;
-    distance <= {sec_3, sec_2, sec_1, sec_0};
+    distance_count <= 0;
+    distance <= distance_count;
     state <= state0;
   end
   default: state <= state0;
