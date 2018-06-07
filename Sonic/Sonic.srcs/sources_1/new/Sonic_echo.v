@@ -42,6 +42,8 @@ case (state)
   begin
     if (echo) begin
       distance_count <= distance_count + 1;
+      if (distance_count == 16'b1)
+        state <= state2;
     end else begin
       state <= state2;
     end

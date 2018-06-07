@@ -67,10 +67,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param xicom.use_bs_reader 1
-  set_param synth.incrementalSynthesisCache C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/.Xil/Vivado-8300-DESKTOP-R99TAMK/incrSyn
+  set_param synth.incrementalSynthesisCache C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/.Xil/Vivado-6924-DESKTOP-R99TAMK/incrSyn
   open_checkpoint Top_routed.dcp
-  set_property webtalk.parent_dir C:/Users/YihengJ/Documents/Project/XilinkProject/Sonic/Sonic.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.cache/wt [current_project]
   catch { write_mem_info -force Top.mmi }
   write_bitstream -force Top.bit -bin_file
   catch {write_debug_probes -quiet -force Top}

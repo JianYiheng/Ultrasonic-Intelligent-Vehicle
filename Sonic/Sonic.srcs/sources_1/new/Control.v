@@ -21,34 +21,40 @@
 
 
 module Control(
-    input [3:0] button,
-    output [3:0] type
-    );
+    input [15:0] text1,
+    input [15:0] text2,
+    input [15:0] text3,
+    output [3:0] type_out
+);
 
-
-reg [3:0] type_reg;
-reg [1:0] encode_out;
-assign type = type_reg;
+reg [3:0] type, type_reg;
+localparam d = 16'b0000010000001111;
 
 always @ *
 begin
-  casez (button)
-    4'b1???: encode_out = 2'b00;
-    4'b01??: encode_out = 2'b01;
-    4'b001?: encode_out = 2'b10;
-    4'b0001: encode_out = 2'b11;
-   default: encode_out = 2'b00;
-  endcase
+  if (text1 <= d) begin
+    if (text2 <= d) begin
+      type = 2'b10;
+    end else begin
+      if (text3 <= d) begin
+        type = 2'b01;
+      end else begin
+        type = 2'b0;
+      end
+    end
+  end else begin
+    type = 4'b1;
+  end
 end
 
 always @ *
 begin
-  case (encode_out)
-    2'b00: type_reg = 4'b1111;
-    2'b01: type_reg = 4'b0101;
-    2'b10: type_reg = 4'b1010;
-    2'b11: type_reg = 4'b0000;
-    default: type_reg = 4'b1111;
+  case (type)
+    2'b00: type_reg = 4'b1;
+    2'b01: type_reg = 4'b1010;
+    2'b10: type_reg = 4'b0101;
+    2'b11: type_reg = 4'b0; 
+    default: type_reg = 4'b1;
   endcase
 end
 

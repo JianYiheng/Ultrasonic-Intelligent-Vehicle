@@ -1,9 +1,13 @@
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
-set_property IOSTANDARD LVCMOS33 [get_ports trig]
+set_property IOSTANDARD LVCMOS33 [get_ports {trig[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {trig[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {trig[2]}]
 set_property PACKAGE_PIN P17 [get_ports clk]
 set_property PACKAGE_PIN H17 [get_ports trig]
 
-set_property IOSTANDARD LVCMOS33 [get_ports echo]
+set_property IOSTANDARD LVCMOS33 [get_ports {echo[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {echo[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {echo[2]}]
 set_property PACKAGE_PIN G17 [get_ports echo]
 
 set_property IOSTANDARD LVCMOS33 [get_ports {post1[3]}]
@@ -90,3 +94,10 @@ set_property PACKAGE_PIN M4 [get_ports {button[2]}]
 set_property PACKAGE_PIN N4 [get_ports {button[1]}]
 set_property PACKAGE_PIN R1 [get_ports {button[0]}]
 
+
+set_property PACKAGE_PIN G17 [get_ports {echo[0]}]
+set_property PACKAGE_PIN J13 [get_ports {echo[1]}]
+set_property PACKAGE_PIN D17 [get_ports {echo[2]}]
+set_property PACKAGE_PIN H17 [get_ports {trig[0]}]
+set_property PACKAGE_PIN K13 [get_ports {trig[1]}]
+set_property PACKAGE_PIN E17 [get_ports {trig[2]}]
