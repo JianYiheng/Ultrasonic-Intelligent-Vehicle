@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jun  7 21:13:20 2018
-# Process ID: 9404
+# Start of session at: Fri Jun  8 16:04:12 2018
+# Process ID: 6132
 # Current directory: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.runs/synth_1/Top.vds
