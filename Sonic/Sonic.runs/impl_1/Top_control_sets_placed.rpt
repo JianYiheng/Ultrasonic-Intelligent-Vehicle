@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri Jun  8 16:05:47 2018
+| Date         : Fri Jun  8 18:13:30 2018
 | Host         : DESKTOP-R99TAMK running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     5 |
-| Unused register locations in slices containing registers |    30 |
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    55 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,33 +33,48 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |              27 |           11 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              90 |           27 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |             138 |           39 |
+| Yes          | No                    | No                     |              44 |           10 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              48 |           15 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+----------------------------------+------------------+----------------+
-|  Clock Signal  | Enable Signal |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
-+----------------+---------------+----------------------------------+------------------+----------------+
-|  clk_IBUF_BUFG |               | prog10/cnt_period[16]_i_1__2_n_0 |                5 |             17 |
-|  clk_IBUF_BUFG |               | prog7/cnt_period[16]_i_1_n_0     |                5 |             17 |
-|  clk_IBUF_BUFG |               | prog8/cnt_period[16]_i_1__0_n_0  |                5 |             17 |
-|  clk_IBUF_BUFG |               | prog9/cnt_period[16]_i_1__1_n_0  |                5 |             17 |
-|  clk_IBUF_BUFG |               | prog1/cnt_period[21]_i_1_n_0     |                7 |             22 |
-+----------------+---------------+----------------------------------+------------------+----------------+
++----------------+-------------------------------------+-------------------------------------+------------------+----------------+
+|  Clock Signal  |            Enable Signal            |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------+-------------------------------------+------------------+----------------+
+| ~prog6/clk_out |                                     |                                     |                1 |              2 |
+| ~clk_out_0     |                                     |                                     |                1 |              2 |
+| ~clk_out       |                                     |                                     |                1 |              2 |
+| ~prog6/clk_out | prog6/distance[15]_i_1__1_n_0       |                                     |                2 |             12 |
+| ~prog6/clk_out | prog6/distance_count[15]_i_2__1_n_0 | prog6/distance_count[15]_i_1__1_n_0 |                5 |             16 |
+| ~clk_out_0     | prog2/distance[15]_i_1_n_0          |                                     |                5 |             16 |
+| ~clk_out_0     | prog2/distance_count[15]_i_2_n_0    | prog2/distance_count[15]_i_1_n_0    |                5 |             16 |
+|  clk_IBUF_BUFG |                                     | prog2/clear                         |                4 |             16 |
+|  clk_IBUF_BUFG |                                     | prog4/count[0]_i_1__0_n_0           |                4 |             16 |
+|  clk_IBUF_BUFG |                                     | prog6/count[0]_i_1__1_n_0           |                4 |             16 |
+| ~clk_out       | prog4/distance[15]_i_1__0_n_0       |                                     |                3 |             16 |
+| ~clk_out       | prog4/distance_count[15]_i_2__0_n_0 | prog4/distance_count[15]_i_1__0_n_0 |                5 |             16 |
+|  clk_IBUF_BUFG |                                     | prog10/cnt_period[16]_i_1__2_n_0    |                5 |             17 |
+|  clk_IBUF_BUFG |                                     | prog7/cnt_period[16]_i_1_n_0        |                5 |             17 |
+|  clk_IBUF_BUFG |                                     | prog8/cnt_period[16]_i_1__0_n_0     |                5 |             17 |
+|  clk_IBUF_BUFG |                                     | prog9/cnt_period[16]_i_1__1_n_0     |                5 |             17 |
+|  clk_IBUF_BUFG |                                     |                                     |                8 |             21 |
+|  clk_IBUF_BUFG |                                     | prog1/cnt_period[21]_i_1_n_0        |                7 |             22 |
++----------------+-------------------------------------+-------------------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 16+    |                     5 |
+| 2      |                     3 |
+| 12     |                     1 |
+| 16+    |                    14 |
 +--------+-----------------------+
 
 

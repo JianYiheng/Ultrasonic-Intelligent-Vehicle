@@ -30,7 +30,8 @@ PWM prog7(clk,type[0],motor1);
 PWM prog8(clk,type[1],motor2);
 PWM prog9(clk,type[2],motor3);
 PWM prog10(clk,type[3],motor4);
-Control prog11(button, type);
+Control prog11(text1,text2,text3,type);
+led_seg prog12(clk, text1, text2, post1,post2,seg1,seg2);
 
 
 endmodule

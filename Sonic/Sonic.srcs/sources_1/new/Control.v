@@ -58,4 +58,6 @@ begin
   endcase
 end
 
+assign type_out = type_reg;
+
 endmodule
