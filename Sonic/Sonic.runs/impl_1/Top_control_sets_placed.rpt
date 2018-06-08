@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri Jun  8 18:13:30 2018
+| Date         : Fri Jun  8 18:50:40 2018
 | Host         : DESKTOP-R99TAMK running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -53,12 +53,12 @@ Table of Contents
 | ~clk_out       |                                     |                                     |                1 |              2 |
 | ~prog6/clk_out | prog6/distance[15]_i_1__1_n_0       |                                     |                2 |             12 |
 | ~prog6/clk_out | prog6/distance_count[15]_i_2__1_n_0 | prog6/distance_count[15]_i_1__1_n_0 |                5 |             16 |
-| ~clk_out_0     | prog2/distance[15]_i_1_n_0          |                                     |                5 |             16 |
-| ~clk_out_0     | prog2/distance_count[15]_i_2_n_0    | prog2/distance_count[15]_i_1_n_0    |                5 |             16 |
-|  clk_IBUF_BUFG |                                     | prog2/clear                         |                4 |             16 |
 |  clk_IBUF_BUFG |                                     | prog4/count[0]_i_1__0_n_0           |                4 |             16 |
 |  clk_IBUF_BUFG |                                     | prog6/count[0]_i_1__1_n_0           |                4 |             16 |
-| ~clk_out       | prog4/distance[15]_i_1__0_n_0       |                                     |                3 |             16 |
+|  clk_IBUF_BUFG |                                     | prog2/clear                         |                4 |             16 |
+| ~clk_out_0     | prog2/distance[15]_i_1_n_0          |                                     |                4 |             16 |
+| ~clk_out_0     | prog2/distance_count[15]_i_2_n_0    | prog2/distance_count[15]_i_1_n_0    |                5 |             16 |
+| ~clk_out       | prog4/distance[15]_i_1__0_n_0       |                                     |                4 |             16 |
 | ~clk_out       | prog4/distance_count[15]_i_2__0_n_0 | prog4/distance_count[15]_i_1__0_n_0 |                5 |             16 |
 |  clk_IBUF_BUFG |                                     | prog10/cnt_period[16]_i_1__2_n_0    |                5 |             17 |
 |  clk_IBUF_BUFG |                                     | prog7/cnt_period[16]_i_1_n_0        |                5 |             17 |

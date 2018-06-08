@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 2018/05/05 20:47:58
-// Design Name: 
-// Module Name: led_seg
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 module led_seg(
     input clk,
@@ -43,6 +24,7 @@ end
 assign s = clkdiv[17:15];
 
 always @ *
+begin
   case (s)
     3'b000:
         begin
@@ -93,28 +75,30 @@ always @ *
           hex = text2_reg[15:12];
         end  
   endcase
+end
+
+
+
 
 always @ *
 begin
   case (hex)
     4'h0:
-      begin
-        seg1[7:0]=8'b11111100;seg2[7:0]=8'b11111100;
-      end
+    begin
+      seg1[7:0]=8'b11111100;seg2[7:0]=8'b11111100;
+    end
     4'h1:
     begin
       seg1[7:0]=8'b01100000;seg2[7:0]=8'b01100000;
     end
     4'h2:
     begin
-      seg1[7:0]<=8'b11011010;seg2[7:0]=8'b11011010;
+      seg1[7:0]=8'b11011010;seg2[7:0]=8'b11011010;
     end
-    
     4'h3:
     begin
       seg1[7:0]=8'b11110010;seg2[7:0]=8'b11110010;
     end
-    
     4'h4:
     begin
       seg1[7:0]=8'b01100110;seg2[7:0]=8'b01100110;
@@ -123,12 +107,10 @@ begin
     begin
       seg1[7:0]=8'b10110110;seg2[7:0]=8'b10110110;
     end
-    
     4'h6:
     begin
       seg1[7:0]=8'b10111110;seg2[7:0]=8'b10111110;
     end
-    
     4'h7:
     begin
       seg1[7:0]=8'b11100000;seg2[7:0]=8'b11100000;
@@ -163,7 +145,7 @@ begin
     end  
     default:  
     begin
-      seg1[7:0] = 8'b00000000;seg2[7:0] = 8'b00000000;
+      seg1[7:0]=8'b00000000;seg2[7:0]=8'b00000000;
     end
   endcase
 end

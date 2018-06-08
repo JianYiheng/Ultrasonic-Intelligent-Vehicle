@@ -2,7 +2,6 @@
 module Top(
     input clk,
     input [2:0] echo,
-    input [3:0] button,
 
     output [2:0] trig,
     output [3:0] post1,
@@ -13,12 +12,12 @@ module Top(
     output [1:0] motor2,
     output [1:0] motor3,
     output [1:0] motor4
-    );
+);
 
 wire [15:0] text1;
 wire [15:0] text2;
 wire [15:0] text3;
-wire  [3:0] type;
+wire [3:0] type;
    
 Sonic_trig prog1(clk, trig[0]);
 Sonic_echo prog2(clk, echo[0], text1);
@@ -31,7 +30,7 @@ PWM prog8(clk,type[1],motor2);
 PWM prog9(clk,type[2],motor3);
 PWM prog10(clk,type[3],motor4);
 Control prog11(text1,text2,text3,type);
-led_seg prog12(clk, text1, text2, post1,post2,seg1,seg2);
+led_seg prog12(clk, text1, text2, post1, post2, seg1, seg2);
 
 
 endmodule
