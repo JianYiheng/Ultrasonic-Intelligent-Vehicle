@@ -17,24 +17,22 @@ begin
       type = 2'b10;
     end else begin
       if (text3 <= d) begin
-        type = 2'b01;
-      end else begin
         type = 2'b0;
       end
     end
   end else begin
-    type = 4'b1;
+    type = 4'b11;
   end
 end
 
 always @ *
 begin
   case (type)
-    2'b00: type_reg = 4'b1;
+    2'b00: type_reg = 4'b0000;
     2'b01: type_reg = 4'b1010;
     2'b10: type_reg = 4'b0101;
-    2'b11: type_reg = 4'b0; 
-    default: type_reg = 4'b1;
+    2'b11: type_reg = 4'b1111; 
+    default: type_reg = 4'b1111;
   endcase
 end
 

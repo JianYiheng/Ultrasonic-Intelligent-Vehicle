@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Fri Jun  8 18:51:08 2018
+| Date         : Fri Jun  8 19:23:43 2018
 | Host         : DESKTOP-R99TAMK running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_methodology_drc_routed.rpt -pb Top_methodology_drc_routed.pb -rpx Top_methodology_drc_routed.rpx
 | Design       : Top
@@ -23,11 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 257
+             Violations found: 259
 +-----------+----------+-----------------------------+------------+
 | Rule      | Severity | Description                 | Violations |
 +-----------+----------+-----------------------------+------------+
 | TIMING-17 | Warning  | Non-clocked sequential cell | 257        |
+| TIMING-20 | Warning  | Non-clocked latch           | 2          |
 +-----------+----------+-----------------------------+------------+
 
 2. REPORT DETAILS
@@ -1315,6 +1316,16 @@ Related violations: <none>
 TIMING-17#257 Warning
 Non-clocked sequential cell  
 The clock pin prog9/cnt_period_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch prog11/type_reg[0]/L7 (in prog11/type_reg[0] macro) cannot be properly analyzed as its control pin prog11/type_reg[0]/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch prog11/type_reg[1] cannot be properly analyzed as its control pin prog11/type_reg[1]/G is not reached by a timing clock
 Related violations: <none>
 
 
