@@ -13,13 +13,18 @@ localparam d = 16'b0000010000001111;
 always @ *
 begin
   if (text1 <= d) begin
-    if (text2 <= d) begin
-      type = 2'b10;
+    if (text2 > text3) begin
+      type = 2'b01;
     end else begin
-      if (text3 <= d) begin
-        type = 2'b0;
-      end
+      type = 2'b10;
     end
+    // if (text2 <= d) begin
+    //   type = 2'b10;
+    // end else begin
+    //   if (text3 <= d) begin
+    //     type = 2'b0;
+    //   end
+    // end
   end else begin
     type = 4'b11;
   end
