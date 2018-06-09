@@ -8,8 +8,8 @@ module Control(
 );
 
 reg [3:0] type, type_reg;
-localparam df = 16'b0000100011000110;
-localparam ds = 16'b0000011010101101;
+localparam df = 16'b0000000011000110;
+localparam ds = 16'b0000000010101101;
 
 always @ *
 begin
