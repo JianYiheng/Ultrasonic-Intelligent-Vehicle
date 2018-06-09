@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Jun 10 00:07:10 2018
-# Process ID: 5028
+# Start of session at: Sun Jun 10 00:22:50 2018
+# Process ID: 8592
 # Current directory: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
 # Log file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.runs/synth_1/Top.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3532 
+INFO: Helper process launched with PID 11808 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 344.309 ; gain = 100.453
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 344.879 ; gain = 100.707
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Top.v:2]
 INFO: [Synth 8-638] synthesizing module 'Sonic_trig' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_trig.v:2]
@@ -29,7 +29,6 @@ INFO: [Synth 8-638] synthesizing module 'Sonic_echo' [C:/Users/YihengJ/Documents
 	Parameter N bound to: 50 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Sonic_echo' (2#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:2]
 INFO: [Synth 8-638] synthesizing module 'filter' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/WaveFilter.v:2]
-	Parameter N bound to: 50 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'filter' (3#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/WaveFilter.v:2]
 INFO: [Synth 8-638] synthesizing module 'PWM' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/imports/Files/PWM.v:2]
 INFO: [Synth 8-226] default block is never used [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/imports/Files/PWM.v:22]
@@ -43,9 +42,8 @@ INFO: [Synth 8-256] done synthesizing module 'led_seg' (6#1) [C:/Users/YihengJ/D
 INFO: [Synth 8-638] synthesizing module 'led_display' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:3]
 INFO: [Synth 8-256] done synthesizing module 'led_display' (7#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:3]
 INFO: [Synth 8-256] done synthesizing module 'Top' (8#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Top.v:2]
-WARNING: [Synth 8-3331] design filter has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 396.605 ; gain = 152.750
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 396.867 ; gain = 152.695
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -55,7 +53,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 396.605 ; gain = 152.750
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 396.867 ; gain = 152.695
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -113,22 +111,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 722.102 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 721.324 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 722.102 ; gain = 478.246
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 721.324 ; gain = 477.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 722.102 ; gain = 478.246
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 721.324 ; gain = 477.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 722.102 ; gain = 478.246
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 721.324 ; gain = 477.152
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
@@ -140,7 +138,7 @@ WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/U
 INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'dismid_reg' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/WaveFilter.v:42]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 722.102 ; gain = 478.246
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 721.324 ; gain = 477.152
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'prog1' (Sonic_trig) to 'prog5'
 INFO: [Synth 8-223] decloning instance 'prog1' (Sonic_trig) to 'prog9'
@@ -155,16 +153,19 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 6     
 	   2 Input     22 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 4     
 	   3 Input     17 Bit       Adders := 1     
 	   2 Input     16 Bit       Adders := 4     
-	   2 Input      2 Bit       Adders := 6     
-	   2 Input      1 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 12    
+	   2 Input      1 Bit       Adders := 9     
 +---Registers : 
 	               22 Bit    Registers := 1     
 	               17 Bit    Registers := 4     
-	                1 Bit    Registers := 3     
+	               16 Bit    Registers := 18    
+	                2 Bit    Registers := 12    
+	                1 Bit    Registers := 9     
 +---Muxes : 
 	   2 Input     22 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 4     
@@ -209,11 +210,17 @@ Detailed RTL Component Info :
 Module filter 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      2 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 5     
-	   2 Input      1 Bit        Muxes := 5     
 	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 5     
 Module PWM 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -261,7 +268,30 @@ WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Us
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v:18]
 WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_seg.v:21]
 INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-3331] design filter has unconnected port clk
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prog11/clk_out_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prog7/clk_out_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prog3/clk_out_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prog12/clk_out_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prog8/clk_out_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\prog4/clk_out_reg )
+WARNING: [Synth 8-3332] Sequential element (prog3/count0_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/count0_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/clk_out_reg) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog4/count0_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog4/count0_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog4/clk_out_reg) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog7/count0_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog7/count0_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog7/clk_out_reg) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog8/count0_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog8/count0_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog8/clk_out_reg) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog11/count0_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog11/count0_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog11/clk_out_reg) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog12/count0_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog12/count0_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog12/clk_out_reg) is unused and will be removed from module Top.
 CRITICAL WARNING: [Synth 8-3352] multi-driven net led[4] with 1st driver pin 'prog19/led_inferred/led[4]' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:10]
 CRITICAL WARNING: [Synth 8-3352] multi-driven net led[4] with 2nd driver pin 'GND' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:10]
 CRITICAL WARNING: [Synth 8-5559] multi-driven net led[4] is connected to constant driver, other driver is ignored [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:10]
@@ -275,7 +305,7 @@ CRITICAL WARNING: [Synth 8-3352] multi-driven net led[7] with 1st driver pin 'pr
 CRITICAL WARNING: [Synth 8-3352] multi-driven net led[7] with 2nd driver pin 'GND' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:10]
 CRITICAL WARNING: [Synth 8-5559] multi-driven net led[7] is connected to constant driver, other driver is ignored [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:10]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 722.102 ; gain = 478.246
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 721.324 ; gain = 477.152
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -287,13 +317,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 725.191 ; gain = 481.336
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 722.348 ; gain = 478.176
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 726.527 ; gain = 482.672
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 723.684 ; gain = 479.512
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -355,6 +385,8 @@ WARNING: [Synth 8-3332] Sequential element (prog3/dismid_reg[3]) is unused and w
 WARNING: [Synth 8-3332] Sequential element (prog3/dismid_reg[2]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (prog3/dismid_reg[1]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (prog3/dismid_reg[0]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/count1_reg[1]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (prog3/count1_reg[0]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (prog3/dis2_reg[15]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (prog3/dis2_reg[14]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (prog3/dis2_reg[13]) is unused and will be removed from module Top.
@@ -384,29 +416,9 @@ WARNING: [Synth 8-3332] Sequential element (prog3/dis1_reg[6]) is unused and wil
 WARNING: [Synth 8-3332] Sequential element (prog3/dis1_reg[5]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (prog3/dis1_reg[4]) is unused and will be removed from module Top.
 WARNING: [Synth 8-3332] Sequential element (prog3/dis1_reg[3]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis1_reg[2]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis1_reg[1]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis1_reg[0]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[15]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[14]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[13]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[12]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[11]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[10]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[9]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[8]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[7]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[6]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[5]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[4]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[3]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[2]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[1]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/dis0_reg[0]) is unused and will be removed from module Top.
-WARNING: [Synth 8-3332] Sequential element (prog3/count1_reg[1]) is unused and will be removed from module Top.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -430,7 +442,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -443,7 +455,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -455,25 +467,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -515,11 +527,11 @@ Report Instance Areas:
 |7     |  prog18 |led_seg    |    32|
 +------+---------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 743.309 ; gain = 499.137
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 12 critical warnings and 557 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 746.152 ; gain = 176.801
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 746.152 ; gain = 502.297
+Synthesis finished with 0 errors, 12 critical warnings and 574 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 743.309 ; gain = 174.680
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 743.309 ; gain = 499.137
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -529,10 +541,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-40 Infos, 123 Warnings, 26 Critical Warnings and 0 Errors encountered.
+46 Infos, 121 Warnings, 26 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 746.523 ; gain = 515.109
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 744.070 ; gain = 513.035
 INFO: [Common 17-1381] The checkpoint 'C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 746.523 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Jun 10 00:07:55 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 744.070 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 10 00:23:35 2018...

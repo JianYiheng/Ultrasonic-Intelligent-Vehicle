@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 module filter(
-    input N,
+    input [7:0] N,
     input clk,
     input [15:0] distance,
     output [15:0] disoutput
