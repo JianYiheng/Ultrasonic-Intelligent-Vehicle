@@ -9,13 +9,13 @@ module Control(
 );
 
 reg [3:0] type, type_reg, led_reg;
-localparam df = 16'b0000100011000110;
-localparam ds = 16'b0000011010101101;
+localparam df = 16'b0000010001011101;
+localparam ds = 16'b0000001000100001;
 
 always @ *
 begin
   if (text1 <= df) begin
-    if (text2 > text3 + 16'b0000000011111010) begin
+    if (text2 > text3 + 16'b0000001000100001) begin
       type = 2'b01;
       led_reg = 8'b00000001;
     end else begin

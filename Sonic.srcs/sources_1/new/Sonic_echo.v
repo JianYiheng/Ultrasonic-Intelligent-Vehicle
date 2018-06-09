@@ -57,6 +57,10 @@ case (state)
   default: state <= state0;
 endcase
 
+reg [1:0] filter_count0,filter_count1;
+reg [2:0] middle0[15:0],middle1[15:0];
+reg [2:0] store0[15:0], strore1[15:0];
+
 assign text = distance;
 
 endmodule
