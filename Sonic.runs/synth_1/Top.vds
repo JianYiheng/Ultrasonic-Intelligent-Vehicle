@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Jun  8 21:06:23 2018
-# Process ID: 14924
-# Current directory: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.runs/synth_1
+# Start of session at: Sat Jun  9 17:54:00 2018
+# Process ID: 11232
+# Current directory: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.runs/synth_1
 # Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
-# Log file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.runs/synth_1/Top.vds
-# Journal file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.runs/synth_1\vivado.jou
+# Log file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.runs/synth_1/Top.vds
+# Journal file: C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top.tcl -notrace
 Command: synth_design -top Top -part xc7a35ticsg324-1L
@@ -15,33 +15,33 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4108 
+INFO: Helper process launched with PID 7788 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 345.070 ; gain = 100.441
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 344.797 ; gain = 100.871
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Top.v:2]
-INFO: [Synth 8-638] synthesizing module 'Sonic_trig' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_trig.v:2]
-INFO: [Synth 8-256] done synthesizing module 'Sonic_trig' (1#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_trig.v:2]
-INFO: [Synth 8-638] synthesizing module 'Sonic_echo' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:2]
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Top.v:2]
+INFO: [Synth 8-638] synthesizing module 'Sonic_trig' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_trig.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Sonic_trig' (1#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_trig.v:2]
+INFO: [Synth 8-638] synthesizing module 'Sonic_echo' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:2]
 	Parameter state0 bound to: 2'b00 
 	Parameter state1 bound to: 2'b01 
 	Parameter state2 bound to: 2'b10 
 	Parameter N bound to: 50 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Sonic_echo' (2#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:2]
-INFO: [Synth 8-638] synthesizing module 'PWM' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/imports/Files/PWM.v:2]
-INFO: [Synth 8-226] default block is never used [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/imports/Files/PWM.v:22]
-INFO: [Synth 8-256] done synthesizing module 'PWM' (3#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/imports/Files/PWM.v:2]
-INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Control.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Sonic_echo' (2#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:2]
+INFO: [Synth 8-638] synthesizing module 'PWM' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/imports/Files/PWM.v:2]
+INFO: [Synth 8-226] default block is never used [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/imports/Files/PWM.v:22]
+INFO: [Synth 8-256] done synthesizing module 'PWM' (3#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/imports/Files/PWM.v:2]
+INFO: [Synth 8-638] synthesizing module 'Control' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v:3]
 	Parameter df bound to: 16'b0000100011000110 
 	Parameter ds bound to: 16'b0000011010101101 
-INFO: [Synth 8-256] done synthesizing module 'Control' (4#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Control.v:3]
-INFO: [Synth 8-638] synthesizing module 'led_seg' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:3]
-INFO: [Synth 8-256] done synthesizing module 'led_seg' (5#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:3]
-INFO: [Synth 8-638] synthesizing module 'led_display' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/LED_display.v:3]
-INFO: [Synth 8-256] done synthesizing module 'led_display' (6#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/LED_display.v:3]
-INFO: [Synth 8-256] done synthesizing module 'Top' (7#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Top.v:2]
+INFO: [Synth 8-256] done synthesizing module 'Control' (4#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v:3]
+INFO: [Synth 8-638] synthesizing module 'led_seg' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_seg.v:3]
+INFO: [Synth 8-256] done synthesizing module 'led_seg' (5#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_seg.v:3]
+INFO: [Synth 8-638] synthesizing module 'led_display' [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:3]
+INFO: [Synth 8-256] done synthesizing module 'led_display' (6#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v:3]
+INFO: [Synth 8-256] done synthesizing module 'Top' (7#1) [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Top.v:2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 397.813 ; gain = 153.184
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 397.578 ; gain = 153.652
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -51,91 +51,91 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 397.813 ; gain = 153.184
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 397.578 ; gain = 153.652
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc]
-WARNING: [Vivado 12-584] No ports matched 'motor[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:62]
+Parsing XDC File [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc]
+WARNING: [Vivado 12-584] No ports matched 'motor[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:62]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'motor[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:63]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'motor[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:63]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'motor[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'motor[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:64]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'motor[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:65]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'motor[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:65]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'test'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'test'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:67]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'test'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'test'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:68]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:88]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'button[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:88]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:89]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'button[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:89]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[2]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'button[2]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:90]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[3]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:91]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'button[3]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:91]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[3]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'button[3]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:92]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[2]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'button[2]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:93]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'button[1]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:94]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'button[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'button[0]'. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc:95]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Finished Parsing XDC File [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 719.645 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 721.086 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 719.645 ; gain = 475.016
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 721.086 ; gain = 477.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 719.645 ; gain = 475.016
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 721.086 ; gain = 477.160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 719.645 ; gain = 475.016
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 721.086 ; gain = 477.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Control.v:17]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Control.v:17]
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Control.v:17]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v:17]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v:17]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v:17]
 INFO: [Synth 8-5544] ROM "type_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:21]
+WARNING: [Synth 8-6014] Unused sequential element clkdiv_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_seg.v:21]
 INFO: [Synth 8-5544] ROM "led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 719.645 ; gain = 475.016
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 721.086 ; gain = 477.160
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'prog1' (Sonic_trig) to 'prog3'
 INFO: [Synth 8-223] decloning instance 'prog1' (Sonic_trig) to 'prog5'
@@ -240,14 +240,14 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Control.v:17]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v:17]
 INFO: [Synth 8-5544] ROM "prog13/led" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element prog2/count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
-WARNING: [Synth 8-6014] Unused sequential element prog4/count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
-WARNING: [Synth 8-6014] Unused sequential element prog6/count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
-WARNING: [Synth 8-6014] Unused sequential element prog12/clkdiv_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/sources_1/new/LED_seg.v:21]
+WARNING: [Synth 8-6014] Unused sequential element prog2/count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
+WARNING: [Synth 8-6014] Unused sequential element prog4/count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
+WARNING: [Synth 8-6014] Unused sequential element prog6/count_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v:22]
+WARNING: [Synth 8-6014] Unused sequential element prog12/clkdiv_reg was removed.  [C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_seg.v:21]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 719.645 ; gain = 475.016
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 721.086 ; gain = 477.160
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -259,13 +259,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 719.645 ; gain = 475.016
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 726.301 ; gain = 482.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 719.645 ; gain = 475.016
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 726.738 ; gain = 482.813
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -277,7 +277,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -301,7 +301,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -314,7 +314,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -326,25 +326,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -383,19 +383,19 @@ Report Instance Areas:
 |3     |  prog10 |PWM          |    34|
 |4     |  prog11 |Control      |    26|
 |5     |  prog12 |led_seg      |    43|
-|6     |  prog2  |Sonic_echo   |    84|
+|6     |  prog2  |Sonic_echo   |    80|
 |7     |  prog4  |Sonic_echo_0 |    82|
-|8     |  prog6  |Sonic_echo_1 |    88|
+|8     |  prog6  |Sonic_echo_1 |    92|
 |9     |  prog7  |PWM_2        |    34|
 |10    |  prog8  |PWM_3        |    34|
 |11    |  prog9  |PWM_4        |    34|
 +------+---------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 741.113 ; gain = 174.652
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.113 ; gain = 496.484
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 750.926 ; gain = 183.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 750.926 ; gain = 507.000
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -407,8 +407,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 37 Infos, 20 Warnings, 14 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 741.113 ; gain = 509.484
-INFO: [Common 17-1381] The checkpoint 'C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.runs/synth_1/Top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 750.926 ; gain = 520.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.runs/synth_1/Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 741.113 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Jun  8 21:07:08 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 750.926 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  9 17:54:46 2018...

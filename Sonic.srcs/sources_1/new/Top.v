@@ -19,7 +19,7 @@ wire [15:0] text1;
 wire [15:0] text2;
 wire [15:0] text3;
 wire [3:0] type;
-   
+
 Sonic_trig prog1(clk, trig[0]);
 Sonic_echo prog2(clk, echo[0], text1);
 Sonic_trig prog3(clk, trig[1]);

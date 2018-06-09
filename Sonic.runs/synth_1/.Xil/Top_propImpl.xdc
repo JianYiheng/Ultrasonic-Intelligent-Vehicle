@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.srcs/constrs_1/new/Sonic.xdc rfile:../../../Sonic.srcs/constrs_1/new/Sonic.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/constrs_1/new/Sonic.xdc rfile:../../../Sonic.srcs/constrs_1/new/Sonic.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN P17 [get_ports clk]
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

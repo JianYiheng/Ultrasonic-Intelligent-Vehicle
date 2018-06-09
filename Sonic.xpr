@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic/Sonic.xpr">
+<Project Version="7" Minor="35" Path="C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="f0a0c99b52f845e79d7cc5da1de6213d"/>
