@@ -8,25 +8,27 @@ module Control(
 );
 
 reg [3:0] type, type_reg;
-localparam d = 16'b0000010000001111;
+localparam df = 16'b0000100011000110;
+localparam ds = 16'b0000011010101101;
 
 always @ *
 begin
-  if (text1 <= d) begin
-    if (text2 > text3) begin
+  if (text1 <= df) begin
+    if (text2 > text3 + 16'b0000000011111010) begin
       type = 2'b01;
     end else begin
       type = 2'b10;
     end
-    // if (text2 <= d) begin
-    //   type = 2'b10;
-    // end else begin
-    //   if (text3 <= d) begin
-    //     type = 2'b0;
-    //   end
-    // end
   end else begin
-    type = 4'b11;
+    if (text2 < ds) begin
+      type = 2'b10;
+    end else begin
+      if (text3 < ds) begin
+        type = 2'b01;
+      end else begin
+        type = 4'b11;
+      end
+    end
   end
 end
 

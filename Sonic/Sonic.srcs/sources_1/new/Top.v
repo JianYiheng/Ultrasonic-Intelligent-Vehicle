@@ -11,7 +11,8 @@ module Top(
     output [1:0] motor1,
     output [1:0] motor2,
     output [1:0] motor3,
-    output [1:0] motor4
+    output [1:0] motor4,
+    output [7:0] led
 );
 
 wire [15:0] text1;
@@ -30,7 +31,8 @@ PWM prog8(clk,type[1],motor2);
 PWM prog9(clk,type[2],motor3);
 PWM prog10(clk,type[3],motor4);
 Control prog11(text1,text2,text3,type);
-led_seg prog12(clk, text1, text2, post1, post2, seg1, seg2);
+led_seg prog12(clk, text2, text3, post1, post2, seg1, seg2);
+led_display prog13(type, led);
 
 
 endmodule
