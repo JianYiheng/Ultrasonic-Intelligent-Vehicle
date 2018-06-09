@@ -42,7 +42,7 @@ case (state)
   begin
     if (echo) begin
       distance_count <= distance_count + 1;
-      if (distance_count == 16'b0000001111100110)
+      if (distance_count == 16'b0000111111111111)
         state <= state2;
     end else begin
       state <= state2;
@@ -52,7 +52,6 @@ case (state)
   begin
     distance_count <= 0;
     distance <= distance_count;
-    distance_display = {sec_3,sec_2,sec_1,sec_0};
     state <= state0;
   end
   default: state <= state0;

@@ -33,7 +33,6 @@ set_property ip_output_repo c:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Control.v
-  C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_display.v
   C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/LED_seg.v
   C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/imports/Files/PWM.v
   C:/Users/YihengJ/Documents/GitHub/FPGA-Project/Sonic.srcs/sources_1/new/Sonic_echo.v
