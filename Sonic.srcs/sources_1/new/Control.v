@@ -11,7 +11,7 @@ module Control(
 reg [1:0] type;
 reg [3:0] type_reg;
 localparam df = 16'b0000010001011101;
-localparam ds = 16'b0000001000100001;
+localparam ds = 16'b0000010001011101;
 
 always @ *
 begin

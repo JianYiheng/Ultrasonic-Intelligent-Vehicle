@@ -15,7 +15,7 @@ end
 
 reg temp, motor_reg;
 always @ *
-temp=((cnt_period>=16'd100)&(cnt_period<=16'd9000))?1:0;
+temp=((cnt_period>=16'd100)&(cnt_period<=16'd8600))?1:0;
 
 always @ *
 begin
