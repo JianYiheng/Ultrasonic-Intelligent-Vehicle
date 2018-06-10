@@ -1,12 +1,12 @@
 `timescale 1ns / 1ps
 module filter(
-    input [7:0] N,
+    input [21:0] N,
     input clk,
     input [15:0] distance,
     output [15:0] disoutput
 );
 
-reg [1:0] count0, count1;
+reg [21:0] count0, count1;
 reg clk_out = 1'b0;
 
 always @(posedge clk)
@@ -39,13 +39,13 @@ begin
   if(dis0 >= dis1)
         begin
             if(dis1 >= dis2)
-                dismid <= dis1;
+                dismid = dis1;
             else if(dis1 < dis2)
                 begin
                     if(dis0 >= dis2)
-                        dismid <= dis2;
+                        dismid = dis2;
                     else if(dis0 < dis2)
-                        dismid <= dis0;
+                        dismid = dis0;
                 end
         end
     else if(dis0 < dis1)
@@ -55,9 +55,9 @@ begin
             else if(dis0 < dis2)
                 begin
                     if(dis1 >= dis2)
-                        dismid <= dis2;
+                        dismid = dis2;
                     else if(dis1 < dis2)
-                        dismid <= dis1;
+                        dismid = dis1;
                 end 
         end
 end

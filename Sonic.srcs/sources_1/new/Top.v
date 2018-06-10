@@ -31,24 +31,24 @@ wire [3:0] type;
 
 Sonic_trig prog1(clk, trig[0]);
 Sonic_echo prog2(clk, echo[0], text1);
-filter prog3(50, clk, text1, mid1);
-filter prog4(150, clk, mid1, mid1_n);
+filter prog3(22'd1000000, clk, text1, mid1);
+filter prog4(22'd3000000, clk, mid1, mid1_n);
 Sonic_trig prog5(clk, trig[1]);
 Sonic_echo prog6(clk, echo[1], text2);
-filter prog7(50, clk, text2, mid2);
-filter prog8(150, clk, mid2, mid2_n);
+filter prog7(22'd1000000, clk, text2, mid2);
+filter prog8(22'd3000000, clk, mid2, mid2_n);
 Sonic_trig prog9(clk, trig[2]);
 Sonic_echo prog10(clk, echo[2], text3);
-filter prog11(50, clk, text3, mid3);
-filter prog12(150, clk, mid3, mid3_n);
+filter prog11(22'd1000000, clk, text3, mid3);
+filter prog12(22'd3000000, clk, mid3, mid3_n);
 
 PWM prog13(clk,type[0],motor1);
 PWM prog14(clk,type[1],motor2);
 PWM prog15(clk,type[2],motor3);
 PWM prog16(clk,type[3],motor4);
-Control prog17(mid1_n,mid2_n,mid3_n,type,led);
-led_seg prog18(clk, mid1_n, mid2_n, post1, post2, seg1, seg2);
-led_display prog19(type, led);
+Control prog17(mid1,mid2,mid3,type,led);
+led_seg prog18(clk, mid1, mid2, post1, post2, seg1, seg2);
+// led_display prog19(type, led);
 
 
 endmodule
