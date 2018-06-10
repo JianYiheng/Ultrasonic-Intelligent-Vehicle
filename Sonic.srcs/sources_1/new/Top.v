@@ -46,8 +46,8 @@ PWM prog13(clk,type[0],motor1);
 PWM prog14(clk,type[1],motor2);
 PWM prog15(clk,type[2],motor3);
 PWM prog16(clk,type[3],motor4);
-Control prog17(mid1,mid2,mid3,type,led);
-led_seg prog18(clk, mid1, mid2, post1, post2, seg1, seg2);
+Control prog17(text1,text2,text3,type,led);
+led_seg prog18(clk, text1, mid1_n, post1, post2, seg1, seg2);
 // led_display prog19(type, led);
 
 

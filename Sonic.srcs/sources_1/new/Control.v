@@ -5,38 +5,68 @@ module Control(
     input [15:0] text2,
     input [15:0] text3,
     output [3:0] type_out,
-    output [7:0] led
+    output reg [7:0] led_reg
 );
 
-reg [3:0] type, type_reg, led_reg;
+reg [1:0] type;
+reg [3:0] type_reg;
 localparam df = 16'b0000010001011101;
 localparam ds = 16'b0000001000100001;
 
 always @ *
 begin
   if (text1 <= df) begin
-    if (text2 > text3 + 16'b0000001000100001) begin
+    led_reg = 8'b11;
+    if (text2 > text3) begin
       type = 2'b01;
-      led_reg = 8'b00000001;
+      led_reg = 8'b1100;
     end else begin
       type = 2'b10;
-      led_reg = 8'b00000010;
+      led_reg = 8'b110000;
     end
   end else begin
     if (text2 < ds) begin
       type = 2'b10;
-      led_reg = 8'b00000100;
+      led_reg = 8'b11000000;
     end else begin
       if (text3 < ds) begin
         type = 2'b01;
-        led_reg = 8'b00001000;
+        led_reg = 8'b10000001;
       end else begin
-        type = 4'b11;
-        led_reg = 8'b00010000;
+        type = 2'b11;
+        led_reg = 8'b11111111;
       end
     end
   end
 end
+
+// always @ *
+// begin
+//   if (text1 <= df) begin
+//     led_reg = 8'b11111111;
+//     if (text2 > text3) begin
+//       type = 2'b01;
+// //      led_reg = 8'b10000001;
+//     end else begin
+//       type = 2'b10;
+// //      led_reg = 8'b10000010;
+//     end
+//   end else begin
+//     led_reg = 8'b0;
+//     if (text2 < ds) begin
+//       type = 2'b10;
+// //      led_reg = 8'b01000100;
+//     end else begin
+//       if (text3 < ds) begin
+//         type = 2'b01;
+// //        led_reg = 8'b00101000;
+//       end else begin
+//         type = 4'b11;
+// //        led_reg = 8'b00010000;
+//       end
+//     end
+//   end
+// end
 
 always @ *
 begin
@@ -50,6 +80,6 @@ begin
 end
 
 assign type_out = type_reg;
-assign led = led_reg;
+// assign led = led_reg;
 
 endmodule

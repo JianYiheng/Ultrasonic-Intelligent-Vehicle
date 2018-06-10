@@ -42,7 +42,7 @@ case (state)
   begin
     if (echo) begin
       distance_count <= distance_count + 1;
-      if (distance_count == 16'b0000111111111111)
+      if (distance_count == 16'b1111111111111111)
         state <= state2;
     end else begin
       state <= state2;
@@ -56,10 +56,6 @@ case (state)
   end
   default: state <= state0;
 endcase
-
-reg [1:0] filter_count0,filter_count1;
-reg [2:0] middle0[15:0],middle1[15:0];
-reg [2:0] store0[15:0], strore1[15:0];
 
 assign text = distance;
 
